@@ -8,7 +8,7 @@ Simplified search input component for REACT.
 
 
 ## :bookmark_tabs: Documentaion
-Read the docs : [DOCS](https://reactsearch.netlify.app/)
+Read the docs : [DOCS](https://reactsearchbar.netlify.app/)
 
 
 ## :rocket: Install
@@ -34,7 +34,7 @@ function App() {
 Run the following commands in terminal to setup the project on your local machine.
 
 ```bash 
-git clone https://github.com/AnujSharma141/kaizen.git
+git clone https://github.com/AnujSharma141/reactsearch.git
 cd reactsearch
 npm install
 npm start
