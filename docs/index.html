@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACTSEARCH</title>
+    <link rel="stylesheet" href="../style/docs.css">
+    <link rel="icon" href="../img/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <a href="../" class="nav-title">reactsearch</a>
+            <a href="https://github.com/AnujSharma141/reactsearch" class="nav-button">contribute</a>
+        </div>
+        <div class="cont-root">
+            <div class="menu">
+                <div class="menu-item">Get Started</div>
+                <div class="menu-item">Props</div>
+                <div class="menu-sub">
+                <div class="menu-sub-item">data</div>
+                
+                <div class="menu-sub-item">select</div>
+                
+                <div class="menu-sub-item">submit</div>
+
+                <div class="menu-sub-item">placeholder</div>
+
+                <div class="menu-sub-item">maximum</div>
+                
+            </div>
+
+                <div class="menu-item">Style</div>
+            </div>
+            <div class="cont">
+                <div class="tab">
+                    <div class="tab-title">
+                        Get Started 
+                    </div>
+                    <p class="tab-text">
+                        a react module to create suggestions in search input component.
+                    </p>
+                    <div class="tab-in">
+                        <button class="tab-in-title">INSTALL</button>
+                        <div class="tab-in-code">$ npm install @anujsharma141/reactsearch</div>
+                    </div>
+                    <div class="tab-in">
+                        <button class="tab-in-title">USAGE</button>
+                        <div class="tab-in-code"><span class="pn"> import <span class="lb">Search</span> from <span class="or">"@anujsharma141/reactsearch"</span></span></div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <div class="tab-title">Props</div>
+
+                    <div class="sub">
+                        <div class="sub-title">data</div>
+                        <div class="sub-text">pass an array of objects of strings or objects on which the search is to be index.</div>
+                        <div class="sub-code">
+                            <span class="db">function</span>  <span class="yl">App</span>() {<br />
+                                <span class="db">const</span> <span class="lb">names</span>   = [<span class="or">'blue' <span class="wh">,</span> 'black' <span class="wh">,</span> 'brown'<span class="wh">,</span>'berrys' <span class="wh">,</span>  'baguettes'</span>]
+                                <br />
+                                  <span class="pn">return</span>  (<br />
+                                        <span class="tl-2"></span> &lt;<span class="gr">Search</span> <span class="lb">data</span>=<span class="db">{<span class="lb">names</span>}</span> /><br/>
+                                       <span class="tl-1"></span> )<br />
+                                }
+                        </div>
+                    </div>
+
+
+                    <div class="sub">
+                        <div class="sub-title">select</div>
+                        <div class="sub-text">this method triggers when user selects an option from the search suggestions.
+                            
+                        </div>
+                        <div class="sub-code">
+                            <span class="db">function</span>  <span class="yl">App</span>() {<br />
+                                
+                                <span class="db">const</span> <span class="yl">req</span>  = <span class="lb">link</span> => <span class="db">axios</span>.<span class="yl">request</span>(<span class="or">`https://api.abc.com/name?<span class="db">${<span class="lb">link</span>}</span> `</span>)
+                                <br />
+                                  <span class="pn">return</span>  (<br />
+                                        <span class="tl-2"></span> &lt;<span class="gr">Search</span> <span class="lb">data</span>=<span class="db">{<span class="lb">state</span>}</span> <span class="lb">select</span>=<span class="db">{<span class="yl">req</span>}</span> /><br/>
+                                       <span class="tl-1"></span> )<br />
+                                }
+                        </div>
+                    </div>
+
+
+                    <div class="sub">
+                        <div class="sub-title">submit</div>
+                        <div class="sub-text">this method triggers when user submits the input form.</div>
+                        <div class="sub-code">
+                            <span class="db">function</span>  <span class="yl">App</span>() {<br />
+                                <span class="db">const</span> <span class="yl">req</span>  = <span class="lb">link</span> => <span class="db">axios</span>.<span class="yl">request</span>(<span class="or">`https://api.abc.com/name?<span class="db">${<span class="lb">link</span>}</span> `</span>)
+                                <br />
+                                  <span class="pn">return</span>  (<br />
+                                        <span class="tl-2"></span>&lt;<span class="gr">Search</span> <span class="lb">data</span>=<span class="db">{<span class="lb">state</span>}</span> <span class="lb">submit</span>=<span class="db">{<span class="yl">req</span>}</span> /><br/>
+                                       <span class="tl-1"></span> )<br />
+                                }
+                        </div>
+                    </div>
+
+
+
+                    <div class="sub">
+                        <div class="sub-title">placeholder</div>
+                        <div class="sub-text">placeholder for the searchbar.</div>
+                        <div class="sub-code">
+                            <span class="db">function</span>  <span class="yl">App</span>() {<br />
+                                  <span class="pn">return</span>  (<br />
+                                        <span class="tl-2"></span> &lt;<span class="gr">Search</span>  <span class="lb">data</span>=<span class="db">{<span class="lb">state</span>}</span> <span class="lb">placeholder</span>=<span class="or">"search"</span> /><br/>
+                                       <span class="tl-1"></span> )<br />
+                                }
+                        </div>
+                    </div>
+
+
+
+                    <div class="sub">
+                        <div class="sub-title">maximum</div>
+                        <div class="sub-text">limits the search suggestion to a maximum number of suggestions.</div>
+                        <div class="sub-code">
+                            <span class="db">function</span>  <span class="yl">App</span>() {<br />
+                                  <span class="pn">return</span>  (<br />
+                                        <span class="tl-2"></span> &lt;<span class="gr">Search</span> <span class="lb">data</span>=<span class="db">{<span class="lb">state</span>}</span> <span class="lb">maximum</span>=<span class="or">"5"</span> /><br/>
+                                       <span class="tl-1"></span> )<br />
+                                }
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab">
+                    <div class="tab-title">
+                        Style
+                    </div>
+                    <p class="tab-text">
+                        customize the component by writing css for the following classnames.
+                    </p>
+                    
+                    <div class="tab-table">
+                        <div class="tab-table-col">
+                            <div class="col-1">searchbar</div>
+                            <div class="col-2">class of input element</div>
+                        </div>
+                        
+                        <div class="tab-table-col">
+                            <div class="col-1">searchlist</div>
+                            <div class="col-2">class of dropdown suggestion list</div>
+                        </div>
+                        
+                        <div class="tab-table-col">
+                            <div class="col-1">searchitem</div>
+                            <div class="col-2">class of suggestion list item</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
