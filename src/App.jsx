@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Fuse from 'fuse.js'
-
+import "./style.css"
 
 export default class search extends Component {
     constructor(props){
@@ -27,17 +27,15 @@ export default class search extends Component {
     }
 
     render() {
-        return (
-            <>  
+        return (  
             <form onSubmit={this.submit}>
-                <input className="searchbar" onChange={this.changeHandler} onFocus={()=>this.setState({...this.state, val:null})} value={this.state.val} type="text" placeholder="search ..." name="" id=""/>
-                <div className="searchlist">
+                <input className='searchbar' onChange={this.changeHandler} onFocus={()=>this.setState({...this.state, val:null})} value={this.state.val} type="text" placeholder={this.props.placeholder?this.props.placeholder:"search ..."} name="search" id=""/>
+                <div className='searchlist'>
                 {this.state.res.slice(0, this.props.maximum? this.props.maximum: 5).map(mod =>{
-                    return(<div className="searchitem" onClick={()=>this.select(mod)}>{mod.item}</div>)
+                    return(<div className='searchitem' onClick={()=>this.select(mod)}>{mod.item}</div>)
                 })}
                 </div>
             </form>
-            </>
         )
     }
 }
