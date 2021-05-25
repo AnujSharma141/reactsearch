@@ -1,6 +1,10 @@
 <p align="center">
     <img width="500" src="https://i.ibb.co/xDFf7Bc/Animation.gif" />
 </p>
+<br />
+<p align="center">
+    <img width="500" src="https://i.ibb.co/xDFf7Bc/Animation.gif" />
+</p>
 
 #
 
