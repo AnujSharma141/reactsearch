@@ -1,7 +1,6 @@
 <p align="center">
-    <img width="500" src="https://i.ibb.co/PWRn05P/image.png" />
+    <img width="500" src="https://i.ibb.co/x7vZ6kz/image.png" />
 </p>
-<br />
 <p align="center">
     <img width="500" src="https://i.ibb.co/xDFf7Bc/Animation.gif" />
 </p>
