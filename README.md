@@ -43,5 +43,5 @@ Run the following commands in terminal to setup the project on your local machin
 git clone https://github.com/AnujSharma141/reactsearch.git
 cd reactsearch
 npm install
-npm start
+npm link
 ```
