@@ -1,6 +1,6 @@
 body{
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    font-family: 'Space Mono', monospace;
+    overflow: hidden;
     background: #ffffff;
 }
 body::-webkit-scrollbar {
@@ -29,77 +29,89 @@ justify-content: flex-end;
 }
 .nav-button{
     background: #000000;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-transform: capitalize;
     color: #fff;
     font-size: 0.9vw;
-    border-radius: 0.5vw;
+    border-radius: 0.4vw;
     margin-top: 1.4vw;
     text-decoration: none;
     border: 0px;
     padding: 1.2vw 2vw;
 }
 .nav-button:hover{
-    background: linear-gradient(to top,rgb(63, 63, 63),rgb(36, 36, 36));
+    background: black;
 }
 .landing{
     display: flex;
     flex-direction: row;
+    margin-top: 2vw;
 }
 
 
 .counter{
-    margin-top: 6vw;
-    
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .counter-title{
     color: #000000;
     font-size: 4vw;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0vw;
 }
 .counter-desc{
-    color: #A9A9A9;
+    color: #999999;
     margin: 0vw;
     font-size: 1.1vw;
-    margin-top: 1vw;
-    margin-bottom: 3.4vw;
-    width: 20vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
+    
     line-height: 2.7vw;
     font-weight: 400;
 }
+.buttons{
+    margin-top: 2vw;
+}
+
 .counter-button{
-    background: #5774dd;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    background: #3863ff;
+    font-weight: 700 !important;
     color: #fff;
-    font-size: 1vw;
+    font-size: 0.9vw;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 0.65vw;
-    margin-top: 3vw;
+    border-radius: 0.3vw;
+    margin-top: 1.5vw;
     border: 0px;
     padding: 1.2vw 2vw;
     transition: 0.3s all;
 }
 .counter-button:hover{
-    background: #2747b8;
+    background: #1531ad;
 }
+.button-black{
+    background: #000000;
+    margin-left: 0.5vw;
+}
+
 .land-anim{
     margin-top: 7vw;
-    margin-left: 16vw;
+    margin-left: 10vw;
 }
 .land-img{
     width: 40vw;
 }
 
 .tab{
-    margin-top: 5vw;
-    display: block;
+    margin-top: 4vw;
+    display: flex;
+   
 }
 .tab-title{
     background: #FFAAAA;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -110,20 +122,24 @@ justify-content: flex-end;
     border-radius: 0.35vw;
     margin-top: 3vw;
     border: 0px;
-    padding: 0.3vw 0.8vw;
 }
 .tab-code{
-    width: 33vw;
-    background: #212542;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #dadada;
+    border: 1px solid rgb(172, 172, 172);
     font-family: 'Roboto Mono', monospace;
     line-height: 2vw;
-    color: #FFF;
+    color: #000000;
     font-weight: 400;
     margin-top: 1vw;
     padding: 2.25vw;
     padding-left:3.2vw;
-    font-size: 1vw;
-    border-radius: 0.5vw;
+    font-size: 0.9vw;
+    border-radius: 0.3vw;
 }
 .tab-in{
     width: 28vw; 
@@ -161,17 +177,37 @@ justify-content: flex-end;
 }
 
 .contact{
-    margin-top: 12vw;
+    margin-top: 10vw;
     margin-bottom: 7vw;
 }
 .ct-text{
     margin: 0vw;
     font-weight: 400;
     color: #9B9B9B;
+    font-size: 1vw;
 }
 .ct-title{
     margin: 0vw;
     margin-top: 1vw;
-    font-size: 2vw;
-    color: rgb(56, 56, 56);
+    font-size: 1vw;
+    color: rgb(0, 0, 0);
+}
+.links{
+    margin-top: 3vw;
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-icon{
+    margin-right: 1vw;
+    width: 1.4vw;
+}
+
+.copied{
+    display: none;
+}
+
+.copy{
+    cursor:pointer;
 }

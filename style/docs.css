@@ -1,7 +1,7 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;
     overflow-x: hidden;
-    background: #FCFCFC;
+    background: #ffffff;
     margin: 0;
 }
 body::-webkit-scrollbar {
@@ -29,12 +29,13 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:#FCFCFC ;
+    background:#ffffff ;
     }
 .nav-title{
     text-decoration: none;
-    color: #2E2E2E;
+    color: #000000;
     font-weight: 600;
+    margin-top: 3vw;
     font-size: 1.3vw;
 }
 .nav-button{
@@ -65,7 +66,7 @@ body::-webkit-scrollbar-thumb {
 
 .menu-item{
 font-weight: 700;
-color: #484848;
+color: #000000;
 font-size: 1.75vw;
 margin-bottom: 2.4vw;
 }
@@ -74,8 +75,8 @@ margin-bottom: 2.4vw;
 }
 .menu-sub-item{
 font-weight: 400;
-font-size: 1vw;
-color: #B5B5B5;
+font-size: 1.1vw;
+color: #6d6d6d;
 margin-bottom: 1.75vw;
 }
 .cont{
@@ -92,9 +93,9 @@ margin-bottom: 1.75vw;
     padding: 0.5vw 0vw;
 }
 .tab-in-title{
-    background: #FFAAAA;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    background: #ff8686;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,15 +122,15 @@ margin-bottom: 1.75vw;
 }
 
 .tab-title{
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: 700;
     margin: 0vw;
-    color: #2E2E2E;
+    color: #000000;
 }
 .tab-text{
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: 400;
-    color: #A9A9A9;
+    color: #747474;
     width: 33vw;
     margin-top:2vw;
     line-height: 2.7vw;
@@ -140,7 +141,7 @@ margin-bottom: 1.75vw;
 }
 .sub-title{
     font-size: 2vw;
-    color: #2E2E2E;
+    color: #000000;
     font-weight: 700;
 }
 .sub-text{
@@ -209,4 +210,12 @@ margin-bottom: 1.75vw;
 }
 .tl-2{
     margin-left: 4vw;
+}
+
+.name-link{
+    text-decoration: none;
+    color: #2c2c2c;
+}
+.name-links{
+    margin-top: -15vw !important;
 }
