@@ -211,3 +211,219 @@ justify-content: flex-end;
 .copy{
     cursor:pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-family: 'Space Mono', monospace;
+        overflow: hidden;
+        background: #ffffff;
+    }
+    body::-webkit-scrollbar {
+        height: 0em;
+        width: 0.3vw;
+      }
+       
+    body::-webkit-scrollbar-track {
+      }
+       
+    body::-webkit-scrollbar-thumb {
+        border-radius: 3.5vw;  
+        background-color: rgb(22, 53, 100);
+      }
+    
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        padding-left: 8vw;
+        padding-bottom: 7vw;
+    }
+    .nav{
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .nav-button{
+        background: #000000;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 0.9vw;
+        border-radius: 0.4vw;
+        margin-top: 1.4vw;
+        text-decoration: none;
+        border: 0px;
+        padding: 1.2vw 2vw;
+    }
+    .nav-button:hover{
+        background: black;
+    }
+    .landing{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2vw;
+    }
+    
+    
+    .counter{
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .counter-title{
+        color: #000000;
+        font-size: 9vw;
+        font-weight: 700;
+        margin: 0vw;
+    }
+    .counter-desc{
+        color: #999999;
+        margin: 0vw;
+        font-size:3.5vw;
+        margin-top: 4vw;
+        margin-bottom: 0vw;
+        
+        line-height: 6vw;
+        font-weight: 400;
+    }
+    .buttons{
+        margin-top: 5vw;
+    }
+    
+    .counter-button{
+        background: #3863ff;
+        font-weight: 700 !important;
+        color: #fff;
+        font-size: 2.7vw;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 0.6vw;
+        margin-top: 4.5vw;
+        border: 0px;
+        padding: 3vw 4vw;
+        transition: 0.3s all;
+    }
+    .counter-button:hover{
+        background: #1531ad;
+    }
+    .button-black{
+        background: #000000;
+        margin-left: 0.5vw;
+    }
+    
+    .land-anim{
+        margin-top: 7vw;
+        margin-left: -5vw;
+    }
+    .land-img{
+        width: 90vw;
+    }
+    
+    .tab{
+        margin-top: 6vw;
+        display: flex;
+       
+    }
+    .tab-title{
+        background: #FFAAAA;
+        font-family: 'Space Mono', monospace;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        text-align: center;
+        font-size: 0.8vw;
+        border-radius: 0.35vw;
+        margin-top: 3vw;
+        border: 0px;
+    }
+    .tab-code{
+        width: 70vw !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #dadada;
+        border: 1px solid rgb(172, 172, 172);
+        font-family: 'Roboto Mono', monospace;
+        line-height: 2vw;
+        color: #000000;
+        font-weight: 400;
+        margin-top: 4vw;
+        padding: 3vw !important;
+        padding-left:3.2vw;
+        font-size: 2.6vw;
+        border-radius: 0.3vw;
+    }
+    .tab-in{
+        width: 28vw; 
+        padding: 1vw 2.5vw;
+    }
+    
+    .tab-pre
+    {
+        margin-top: 1vw;
+        width: 37.45vw;
+        height: 18vw;
+        border-radius: 0.6vw;
+        background: #FFF;
+        box-shadow: 0px 0px 20px #eeeeee;
+    }
+    
+    .pn{
+        color: #F982F2;
+    }.lb{
+        color: #93D7FF;
+    }.or{
+        color: #FFA04E;
+    }.db{
+        color: #82A2F9;
+    }.yl{
+        color: #F8F879;
+    }.gr{
+        color: #82F9A1;
+    }
+    .tl-1{
+        margin-left: 2vw;
+    }
+    .tl-2{
+        margin-left: 4vw;
+    }
+    
+    .contact{
+        margin-top: 25vw;
+        margin-bottom: 7vw;
+    }
+    .ct-text{
+        margin: 0vw;
+        font-weight: 400;
+        color: #9B9B9B;
+        font-size: 3vw;
+    }
+    .ct-title{
+        margin: 0vw;
+        margin-top: 1vw;
+        font-size: 3vw;
+        color: rgb(0, 0, 0);
+    }
+    .links{
+        margin-top: 3vw;
+    }
+    .link{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .link-icon{
+        margin-right: 1vw;
+        width: 4vw;
+    }
+    
+    .copied{
+        display: none;
+    }
+    
+    .copy{
+        cursor:pointer;
+    }
+}
