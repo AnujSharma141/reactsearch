@@ -1,5 +1,5 @@
 body{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Inter', monospace;
     overflow: hidden;
     background: #ffffff;
 }
@@ -55,8 +55,17 @@ justify-content: flex-end;
     flex-direction: column;
     align-items: flex-start;
 }
+.logo{
+    width: 2.5vw;
+    margin-top: 0.5vw;
+    margin-right: 1vw;
+}
 .counter-title{
     color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: 3vw;
     font-weight: 700;
     margin: 0vw;
@@ -64,35 +73,40 @@ justify-content: flex-end;
 .counter-desc{
     color: #999999;
     margin: 0vw;
-    font-size: 1.1vw;
+    font-size: 1vw;
     margin-top: 0.5vw;
     margin-bottom: 0vw;
-    
+    font-family: 'Inter';
     line-height: 2.7vw;
     font-weight: 400;
 }
 .buttons{
-    margin-top: 2vw;
+    margin-top: 10vw;
 }
 
 .counter-button{
     background: #3863ff;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
+    font-family: 'Inter';
     color: #fff;
     font-size: 0.9vw;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     border-radius: 0.3vw;
     margin-top: 1.5vw;
     border: 0px;
     padding: 1.2vw 2vw;
+    border: 1px solid transparent;
     transition: 0.3s all;
 }
 .counter-button:hover{
-    background: #1531ad;
+    background: #000000;
+    color: #ffffff;
 }
 .button-black{
-    background: #000000;
+    border: 1px solid gray;
+    background: #dadada;
+    color: #000000;
     margin-left: 0.5vw;
 }
 
@@ -129,11 +143,11 @@ justify-content: flex-end;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #dadada;
+    background: #000000;
     border: 1px solid rgb(172, 172, 172);
     font-family: 'Roboto Mono', monospace;
     line-height: 2vw;
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
     margin-top: 1vw;
     padding: 2.25vw;
@@ -177,8 +191,9 @@ justify-content: flex-end;
 }
 
 .contact{
-    margin-top: 10vw;
+    margin-top: 4vw;
     margin-bottom: 7vw;
+    font-family: 'Inter';
 }
 .ct-text{
     margin: 0vw;
@@ -214,7 +229,6 @@ justify-content: flex-end;
 
 @media only screen and (max-width: 600px) {
     body{
-        font-family: 'Space Mono', monospace;
         overflow: hidden;
         background: #ffffff;
     }
@@ -292,12 +306,11 @@ justify-content: flex-end;
     
     .counter-button{
         background: #3863ff;
-        font-weight: 700 !important;
+        font-weight: 600 !important;
         color: #fff;
         font-size: 2.7vw;
-        text-transform: uppercase;
         text-decoration: none;
-        border-radius: 0.6vw;
+        border-radius: 0.9vw;
         margin-top: 4.5vw;
         border: 0px;
         padding: 3vw 4vw;
@@ -308,7 +321,7 @@ justify-content: flex-end;
     }
     .button-black{
         background: #000000;
-        margin-left: 0.5vw;
+        margin-left: 1vw;
     }
     
     .land-anim{
@@ -344,17 +357,15 @@ justify-content: flex-end;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background: #dadada;
-        border: 1px solid rgb(172, 172, 172);
         font-family: 'Roboto Mono', monospace;
         line-height: 2vw;
-        color: #000000;
         font-weight: 400;
         margin-top: 4vw;
+        border: 0px;
         padding: 3vw !important;
         padding-left:3.2vw;
         font-size: 2.6vw;
-        border-radius: 0.3vw;
+        border-radius: 1vw;
     }
     .tab-in{
         width: 28vw; 
@@ -425,5 +436,9 @@ justify-content: flex-end;
     
     .copy{
         cursor:pointer;
+    }
+    .logo{
+        width: 8vw;
+        margin-right: 3vw;
     }
 }

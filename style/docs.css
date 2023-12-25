@@ -1,5 +1,5 @@
 body{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Inter', monospace;
     overflow-x: hidden;
     background: #ffffff;
     margin: 0;
@@ -94,8 +94,7 @@ margin-bottom: 1.75vw;
 }
 .tab-in-title{
     background: #ff8686;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +221,7 @@ margin-bottom: 1.75vw;
 
 @media only screen and (max-width: 600px) {
 body{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Inter', monospace;
     overflow-x: hidden;
     background: #ffffff;
     margin: 0;
