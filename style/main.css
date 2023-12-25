@@ -1,7 +1,8 @@
 body{
     font-family: 'Inter', monospace;
     overflow: hidden;
-    background: #ffffff;
+    background: url(../img/background.png);
+    background-size: cover;
 }
 body::-webkit-scrollbar {
     height: 0em;
