@@ -1,18 +1,7 @@
 import React, { useState } from 'react'
 import Fuse from 'fuse.js'
 import "./Input.css"
-
-interface PropTypes {
-    maximum?: number;
-    placeholder?: string;
-    select?: (item: any) => void;
-    threshold? : number; 
-    data: unknown[]
-}
-
-interface ResultType {
-    item: string
-}
+import { PropTypes, ResultType } from '../types'
 
 export default function Search({data, placeholder, maximum, select, threshold}: PropTypes){
 
