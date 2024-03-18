@@ -20,7 +20,7 @@ export default function Search({data, placeholder, maximum, select, threshold}: 
             <input className='search_bar' autoComplete='off' onChange={keyHandler} value={key} type="text" placeholder={placeholder || "search ..."} name="search"/>
             <div className='search_list'>
             {result.slice(0, maximum || 5).map((mod: ResultType, i) =>{
-                return(<div key={i} className='search_item' onClick={()=>select(mod)}>{mod.item}</div>)
+                return(<div key={i} className='search_item' onClick={()=>select? select(mod): ''}>{mod.item}</div>)
             })}
             </div>
         </form>
