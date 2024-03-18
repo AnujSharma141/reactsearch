@@ -106,3 +106,4 @@ dist
 #Compiles 
 lib/
 index.js
+*storybook.log
